@@ -1,0 +1,36 @@
+
+create table user1 (userid number(7) primary key, username varchar2(10) not null)
+
+insert into user1 values(1,'srinu')
+
+insert into user1 values(2,'kiran')
+
+insert into user1 values(3,'nag')
+
+insert into user1 values(4,'charan')
+
+insert into user1 values(5,'ravi')
+
+select * from user1
+
+create table book (bookid number(7) primary key, bookname varchar2(10) not null, author varchar2(10) ,
+bookcount number(10) check(bookcount>0))
+
+select * from book
+
+insert into book values(101,'java','Ken Arnold',1)
+
+insert into book values(102,'java','Gosling',2)
+
+insert into book values(103,'java','James',3)
+
+insert into book values(104,'java','Holmes',4)
+
+insert into book values(105,'java','Arnold',5)
+
+create table userbook (userid number(7) ,bookid number(7),primary key(userid,bookid))
+
+select * from userbook
+
+
+ 
